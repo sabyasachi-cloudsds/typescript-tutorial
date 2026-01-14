@@ -1,24 +1,23 @@
-import "./App.css";
-
-let name: string;
+let name: string = "srikanth";
 let age: number | string;
 let isStudent: boolean;
 let hobbies: string[];
 let role: [number, string];
 let printName: (name: string) => never;
 
-let personName: unknown;
+printName(name: string) {
+  console.log(name);
+};
 
-// type Person={
-//   name:string;
-//   age?:number;
-// }
+let name1: any = "srikanth";
+name1 = 25;
 
-// let person : Person = {
-//   name:"SR"
-// };
-
-// let lotsOfPeople:Person[]
+enum Color {
+  RED,
+  GREEN,
+  BLUE,
+} 
+  
 
 interface Person {
   name: string;
